@@ -1,4 +1,4 @@
-# Travel Memory Application Deployment - Connecting Backend and Frontend  + Scalling the application using LoadBalancer + Cloudflare DNS
+# Travel Memory Application Deployment - Connecting Backend and Frontend  + Scaling the application using LoadBalancer + Cloudflare DNS
 
 ## Launch Instance (2 Instance - One for frontend and One for backend)
 1. Log into the AWS Management Console and navigate to the EC2 Dashboard.
@@ -33,7 +33,7 @@ npm -v`
 3.  Add the following URI
    `MONGO_URI='ENTER_YOUR_URL'
 PORT=3001`
-4. `npm install` - This will install necessary pacakges
+4. `npm install` - This will install necessary packages
 5. `node index.js` or `pm2 start index.js pm2 save` - Run the Backend Application use `pm2` for detach mode
 6. Test the API Endpoint `https://backend.tigredge.net/hello` or `3.110.156.174:3001/hello`
 
@@ -74,24 +74,24 @@ PORT=3001`
   - `sudo snap install --classic certbot`
   - `sudo ln -s /snap/bin/certbot /usr/local/bin/certbot`
   - `sudo certbot --nginx`
-  - enter the domain name to obatain the SSL from Let's encrypt
+  - enter the domain name to obtain the SSL from Let's encrypt
 
 
 9. ## convert the image into AMI
 10. ## create a new instances from AMI - One for Frontend and One for Backend
 11. ## Configure the right Configuration, IP address, NGINX and Security groups
     - Run the VMs
-12. ## Create a Load balancer for Scalling the VM
+12. ## Create a Load balancer for Scaling the VM
     - First create `Target group(Frontend-TG)` for Frontend Server and `Target group(Backend-TG)` for Backend Server
     - map the ports 3000 - Frontend Server (2 VMs)
     - map the ports 3001 - Backend Server (2 VMs)
-    - Now create a Loadbalance using HTTP(80) and HTTPS(443) Listners that redirect to the Targetgroups
+    - Now create a Loadbalance using HTTP(80) and HTTPS(443) Listeners that redirect to the Targetgroups
     - Once the port numbers are `Healthy` we can test the Loadbalancer Frontend LB `Fronntend-LB-1887701079.ap-south-1.elb.amazonaws.com` or `https://travel.tigredge.net/`
     - Once the port numbers are `Healthy` we can test the Loadbalancer Backend LB `Backend-LB-1219613108.ap-south-1.elb.amazonaws.com`
-    - Now, Map the CNAME records to the DNS on Clouflare or any domain provider, I have mapped the domian called `https://travel.tigredge.net/` for SSL i use AWS certificate manager or Cloudflare proxy enabled SSL for easy use
-    - For futher scalling, Configure ASG
+    - Now, Map the CNAME records to the DNS on Cloudflare or any domain provider, I have mapped the domain called `https://travel.tigredge.net/` for SSL i use AWS certificate manager or Cloudflare proxy enabled SSL for easy use
+    - For further scaling, Configure ASG
 ### Now check the URL to see both the Frontend, Backend and We add any Experience all the entries will be stored in `travelmemory` database
-### MERN Appliction is up & running with Load Balancing the VMs 2 for Frontend and 2 for Backend with SSL enabled
+### MERN Application is up & running with Load Balancing the VMs 2 for Frontend and 2 for Backend with SSL enabled
 
 
 
