@@ -93,6 +93,18 @@ PORT=3001`
 ### Now check the URL to see both the Frontend, Backend and We add any Experience all the entries will be stored in `travelmemory` database
 ### MERN Application is up & running with Load Balancing the VMs 2 for Frontend and 2 for Backend with SSL enabled
 
+`Frontend APP URL: https://memory.tigredge.net/
+
+Backend APP URL: https://backend.tigredge.net/hello
+
+Load balancer URL
+
+Frontend LB  URL: Fronntend-LB-1887701079.ap-south-1.elb.amazonaws.com
+
+Backend LB URL :  Backend-LB-1219613108.ap-south-1.elb.amazonaws.com
+
+DNS Record / CNAME: https://travel.tigredge.net/`
+
 
 
 
