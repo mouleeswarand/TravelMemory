@@ -28,6 +28,9 @@ npm -v`
 7. Once connected, click on 'Create Database', name it 'travelmemory', and create a collection (e.g., 'trips')
 
 ## Deploying Backend Application - Backend server
+
+### GIT CLONE `git clone https://github.com/UnpredictablePrashant/TravelMemory.git`
+
 1. `cd TravelMemory/backend`
 2. Create `.env` file
 3.  Add the following URI
@@ -38,6 +41,9 @@ PORT=3001`
 6. Test the API Endpoint `https://backend.tigredge.net/hello` or `3.110.156.174:3001/hello`
 
 ## Deploying the Frontend - Frontend Server
+
+### GIT CLONE `git clone https://github.com/UnpredictablePrashant/TravelMemory.git`
+
 1. `cd TravelMemory/frontend`
 2. create a `.env` file to store environment variables
 3. `echo "REACT_APP_BACKEND_URL=http://EC2_PUBLIC_IP:3001" > .env`
