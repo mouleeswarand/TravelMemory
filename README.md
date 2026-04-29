@@ -1,5 +1,6 @@
 # Travel Memory Application Deployment - Connecting Backend and Frontend  + Scaling the application using LoadBalancer + Cloudflare DNS
 
+
 ## Launch Instance (2 Instance - One for frontend and One for backend)
 1. Log into the AWS Management Console and navigate to the EC2 Dashboard.
 2. Click on 'Launch Instance'. Choose 'Ubuntu Server 20.04 LTS' from the list of Amazon Machine Images (AMIs).
@@ -110,6 +111,10 @@ Frontend LB  URL: Fronntend-LB-1887701079.ap-south-1.elb.amazonaws.com
 Backend LB URL :  Backend-LB-1219613108.ap-south-1.elb.amazonaws.com
 
 DNS Record / CNAME: https://travel.tigredge.net/`
+
+13. ## Architecture Diagram:
+<img width="843" height="282" alt="image" src="https://github.com/user-attachments/assets/77ca0e82-ca2e-4f9d-8f78-8081adf31252" />
+
 
 
 
